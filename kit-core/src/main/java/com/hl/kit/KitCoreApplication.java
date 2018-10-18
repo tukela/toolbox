@@ -1,4 +1,4 @@
-package com.hl.kit.kitcore;
+package com.hl.kit;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
