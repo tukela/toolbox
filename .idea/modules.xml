@@ -2,6 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/kit-cache-redis/kit-cache-redis.iml" filepath="$PROJECT_DIR$/kit-cache-redis/kit-cache-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kit-cache-service/kit-cache-service.iml" filepath="$PROJECT_DIR$/kit-cache-service/kit-cache-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kit-core/kit-core.iml" filepath="$PROJECT_DIR$/kit-core/kit-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kit-data-dynamicdata/kit-data-dynamicdata.iml" filepath="$PROJECT_DIR$/kit-data-dynamicdata/kit-data-dynamicdata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kit-data-jpa/kit-data-jpa.iml" filepath="$PROJECT_DIR$/kit-data-jpa/kit-data-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kit-data-multidata/kit-data-multidata.iml" filepath="$PROJECT_DIR$/kit-data-multidata/kit-data-multidata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kit-data-mybaties/kit-data-mybaties.iml" filepath="$PROJECT_DIR$/kit-data-mybaties/kit-data-mybaties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kit-data-nosql/kit-data-nosql.iml" filepath="$PROJECT_DIR$/kit-data-nosql/kit-data-nosql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kit-data-service/kit-data-service.iml" filepath="$PROJECT_DIR$/kit-data-service/kit-data-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kit-web/kit-web.iml" filepath="$PROJECT_DIR$/kit-web/kit-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kit-web-config/kit-web-config.iml" filepath="$PROJECT_DIR$/kit-web-config/kit-web-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kit-web-jsp/kit-web-jsp.iml" filepath="$PROJECT_DIR$/kit-web-jsp/kit-web-jsp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/toolbox.iml" filepath="$PROJECT_DIR$/.idea/toolbox.iml" />
     </modules>
   </component>

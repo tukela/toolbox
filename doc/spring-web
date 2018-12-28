@@ -1,0 +1,41 @@
+请求-DispatcherServlet-处理器映射（handler mapping）-控制器（controller)-模型（model）and视图(view)-DispatcherServlet
+-视图解 析器（view resolver）-响应
+
+Spring MVC中的拦截器（Interceptor）依赖于web框架基于Java的反射机制属于AOP，类似于Servlet中的过滤器（Filter）依赖于servlet容器只能在容器初始化时调用一次
+要使用Spring MVC中的拦截器，就需要对拦截器类进行定义和配置。通常拦截器类可以通过两种方式来定义。
+多个拦截器同时工作时，它们的preHandle()方法会按照配置文件中拦截器的配置顺序执行
+1.通过实现HandlerInterceptor接口，或继承HandlerInterceptor接口的实现类（如HandlerInterceptorAdapter）来定义。
+2.通过实现WebRequestInterceptor接口，或继承WebRequestInterceptor接口的实现类来定义。
+    HandlerInterceptor接口中的三个方法：
+    preHandle() 方法：该方法会在控制器(controller)方法前执行，其返回值表示是否中断后续操作。当其返回值为false时，会中断后续的所有操作（包括调用下一个拦截器和控制器类中的方法执行等）。
+    postHandle()方法：该方法会在控制器方法调用之后，且解析视图之前执行。可以通过此方法对请求域中的模型和视图做出进一步的修改。然后会通过DispatcherServlet向客户端返回响应。
+    afterCompletion()方法：该方法会在整个请求完成，即视图渲染结束之后执行。可以通过此方法实现一些资源清理、记录日志信息等工作。
+
+
+Spring提供了多种方式将异常转换为响应：
+    特定的Spring异常将会自动映射为指定的HTTP状态码；
+    异常上可以添加@ResponseStatus注解，从而将其映射为某一个HTTP状态码；
+    在方法上可以添加@ExceptionHandler注解，使其用来处理异常。
+
+控制器通知（controller advice）是任意带有@ControllerAdvice注解的类， 这个类会包含一个或多个如下类型的方法：
+会运用到整个应用程序所有控制器中带有@RequestMapping注解的方法上
+    @ExceptionHandler注解标注的方法；
+    @InitBinder注解标注的方法；
+    @ModelAttribute注解标注的方法。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AbstractAnnotation-ConfigDispatcherServletInitializer的任 意类都会自动地配置Dispatcher-Servlet和Spring应用上下文，Spring的应用上下文会位于应用程序的Servlet上下文之中。Spring提供了这个接口的实现，名为SpringServletContainerInitializer，这个类反过来又会查找实 现WebApplicationInitializer的类并将配置的任务交给它们来完成。Spring 3.2引入了一个便利 的WebApplicationInitializer基础实现，也就是AbstractAnnotationConfigDispatcherServletInitializer。因为我们 的Spittr-WebAppInitializer扩展了AbstractAnnotationConfig DispatcherServlet-Initializer（同时也就实现 了WebApplicationInitializer），因此当部署到Servlet 3.0容器中的时候，容器会自动发现它，并用它来配置Servlet上下文实际上，AbstractAnnotationConfigDispatcherServletInitializer会同时创 建DispatcherServlet和ContextLoaderListener。GetServlet-ConfigClasses()方法返回的带有@Configuration注解的 类将会用来定义DispatcherServlet应用上下文中的bean。getRootConfigClasses()方法返回的带有@Configuration注解的类将 会用来配置ContextLoaderListener创建的应用上下文中的bean。

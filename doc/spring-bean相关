@@ -1,0 +1,40 @@
+1．Spring对bean进行实例化；
+2．Spring将值和bean的引用注入到bean对应的属性中；
+3．如果bean实现了BeanNameAware接口，Spring将bean的ID传递给setBean-Name()方法；
+4．如果bean实现了BeanFactoryAware接口，Spring将调用setBeanFactory()方法，将BeanFactory容器实例传入；
+5．如果bean实现了ApplicationContextAware接口，Spring将调用setApplicationContext()方法，将bean所在的应用上下文的 引用传入进来；
+6．如果bean实现了BeanPostProcessor接口，Spring将调用它们的post-ProcessBeforeInitialization()方法；
+7．如果bean实现了InitializingBean接口，Spring将调用它们的after-PropertiesSet()方法。
+    类似地，如果bean使用initmethod声明了初始化方法，该方法也会被调用；
+8．如果bean实现了BeanPostProcessor接口，Spring将调用它们的post-ProcessAfterInitialization()方法；
+9．此时，bean已经准备就绪，可以被应用程序使用了，它们将一直驻留在应用上下文中，直到该应用上下文被销毁；
+10．如果bean实现了DisposableBean接口，Spring将调用它的destroy()接口方法。
+    同样，如果bean使用destroy-method声明了销 毁方法，该方法也会被调用。
+
+
+
+primary 首选
+@Qualifier 限定注解所设置的参数就是想要注入的bean的ID
+
+
+Spring定义了多种作用域，默认单例，选择其他的作用域，要使用@Scope注解可以基于这些作用域创建bean，包括：
+    单例（Singleton）：在整个应用中，只创建bean的一个实例。
+    原型（Prototype）：每次注入或者通过Spring应用上下文获取的时候，都会创建一个新的bean实例。ConfigurableBeanFactory.SCOPE_PROTOTYPE
+    会话（Session）：在Web应用中，为每个会话创建一个bean实例。
+    请求（Rquest）：在Web应用中，为每个请求创建一个bean实例
+    @Scope(value=WebApplicationContext.SCOPE_SESSION,
+        proxyMode=ScopedProxyMode.INTERFACES(接口)/ScopedProxyMode.TARGET_CLASS(具体类)
+    )
+
+处理外部值：
+    @PropertySource引用了类路径中一个名为app.properties这个属性文件会加载到Spring的Environment中
+    属性占位符（Property placeholder）。
+    使用占位符，我们必须要配置一个PropertyPlaceholderConfigurer bean或PropertySourcesPlaceholderConfigurer bean。从Spring 3.1开始，推荐使用PropertySourcesPlaceholderConfigurer，因为它能够基于Spring Environment及其属性源来 解析占位符。
+        @Value("${xx.xx}") string xx;
+    Spring表达式语言（SpEL）拥有很多特性，包括：
+        使用bean的ID来引用bean；
+        调用方法和访问对象的属性；
+        对值进行算术、关系和逻辑运算；
+        正则表达式匹配； 集合操作。
+        是SpEL表达式要放到“#{ ... }”之中，这与属性占位符有些类似，属性占位符需要放到“${ ... }”
+

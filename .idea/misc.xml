@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" default="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/kit-core/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/kit-web/pom.xml" />
+        <option value="$PROJECT_DIR$/mybaties-multidatasource/pom.xml" />
+        <option value="$PROJECT_DIR$/kit-mybaties/pom.xml" />
+        <option value="$PROJECT_DIR$/kit-web-jsp/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/kit-config/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">
