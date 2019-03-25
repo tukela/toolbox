@@ -9,13 +9,10 @@
 
     <modules>
         <module>kit-core</module>
-        <module>kit-data-jpa</module>
-        <module>kit-data-dynamicData</module>
-        <module>kit-data-multidata</module>
-        <module>kit-data-service</module>
-        <module>kit-data-nosql</module>
-        <module>kit-web-jsp</module>
-        <module>kit-web-config</module>
+        <module>kit-cache</module>
+        <module>kit-config</module>
+        <module>kit-data</module>
+        <module>kit-web</module>
     </modules>
 
     <parent>

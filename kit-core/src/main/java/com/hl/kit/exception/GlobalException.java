@@ -2,8 +2,7 @@ package com.hl.kit.exception;
 
 /**
  * 封装全局的异常
- *
- * @author zhoujx
+ * @author: honglei
  * @Date 2017/12/28 下午10:32
  */
 public class GlobalException extends RuntimeException {

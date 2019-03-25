@@ -3,7 +3,7 @@ package com.hl.kit.exception;
 /**
  * 抽象接口
  *
- * @author fengshuonan
+ * @author: honglei
  * @date 2017-12-28-下午10:27
  */
 public interface ServiceExceptionEnum {

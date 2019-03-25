@@ -13,8 +13,13 @@
     <dependencies>
         <dependency>
             <groupId>com.hl.kit</groupId>
-            <artifactId>kit-data-service</artifactId>
+            <artifactId>kit-config</artifactId>
             <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.hl.kit</groupId>
+            <artifactId>kit-data</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
