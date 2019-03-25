@@ -2,10 +2,12 @@ package com.hl.kit.data.config;
 
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.concurrent.ConcurrentMapCache;
 import org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean;
 import org.springframework.cache.support.SimpleCacheManager;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.Collections;
 import java.util.List;
@@ -17,6 +19,8 @@ import java.util.List;
  * @See:
  * @Description:
  */
+@Configuration
+@EnableCaching
 public class SimpleCacheConfig {
     @Bean("cacheManager")
     // List<Cache>会主动搜索Cache的实现bean，并添加到caches中

@@ -15,9 +15,7 @@ import java.util.List;
 
 @Configuration
 public class InterceptorConfig extends WebMvcConfigurerAdapter {
-
 	private static final Log logger = LogFactory.getLog(InterceptorConfig.class);
-
 	@Value("${mvc.interceptor}")
 	private String interceptors;
 
