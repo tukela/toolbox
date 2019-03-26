@@ -5,6 +5,7 @@ import com.hl.kit.util.json.FastJsonUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -12,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import java.util.List;
-
+@ConditionalOnProperty(value = "mvc.interceptor")
 @Configuration
 public class InterceptorConfig extends WebMvcConfigurerAdapter {
 	private static final Log logger = LogFactory.getLog(InterceptorConfig.class);
