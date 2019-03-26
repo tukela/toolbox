@@ -5,3 +5,6 @@
 @ConditionalOnMissingClass（某个class类路径上不存在的时候，才会实例化一个Bean）
 @ConditionalOnNotWebApplication（不是web应用）
 @ConditionalOnProperty
+
+
+会发现满足xml配置的属性可以生效，而注解的属性值无效，所以xml的优先级会高于注解的优先级

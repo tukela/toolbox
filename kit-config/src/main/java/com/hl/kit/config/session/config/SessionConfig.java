@@ -1,7 +1,9 @@
 package com.hl.kit.config.session.config;
 
+import com.hl.kit.config.Listener.SessionListener;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -15,6 +17,7 @@ import javax.servlet.http.HttpSessionListener;
  * @author: honglei
  *
  */
+@ConditionalOnBean(SessionListener.class)
 @Configuration
 public class SessionConfig {
 
