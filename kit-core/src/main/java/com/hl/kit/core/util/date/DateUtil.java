@@ -1,6 +1,5 @@
 package com.hl.kit.core.util.date;
 
-import com.hl.kit.util.date.DateTime;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -260,7 +259,7 @@ public class DateUtil {
 			return null;
 		}
 		long millis = date.getTime();
-		return com.hl.kit.util.date.DateTime.getTime(millis);
+		return DateTime.getTime(millis);
 	}
 
 	/**
@@ -313,7 +312,7 @@ public class DateUtil {
 		if (StringUtils.isEmpty(datetime)) {
 			return null;
 		}
-		long time = com.hl.kit.util.date.DateTime.getTimestamp(datetime);
+		long time = DateTime.getTimestamp(datetime);
 		if (time <= 0) {
 			new Exception("非法日期:" + datetime).printStackTrace();
 		}

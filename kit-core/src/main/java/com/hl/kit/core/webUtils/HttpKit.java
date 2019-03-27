@@ -15,7 +15,6 @@
  */
 package com.hl.kit.core.webUtils;
 
-import com.hl.kit.webUtils.WafRequestWrapper;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 

@@ -1,6 +1,5 @@
 package com.hl.kit.core.datasource;
 
-import com.hl.kit.datasource.DataSourceContextHolder;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
 /**

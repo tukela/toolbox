@@ -6,8 +6,6 @@ import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
-import com.hl.kit.util.qr.MatrixToImageWriter;
-import com.hl.kit.util.qr.QrImage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -213,7 +211,7 @@ public class ImgQrTool {
     /**
      * 生成上方带文字的二维码
      */
-    public static void createQrWithFontsAbove(com.hl.kit.util.qr.QrImage para) {
+    public static void createQrWithFontsAbove(QrImage para) {
         try {
             // 首先生成二维码图片
             BufferedImage qrImage = genBarcode(para.getQrContent(), para.getQrWidth(), para.getQrHeight(), para.getQrIconFilePath());
@@ -281,7 +279,7 @@ public class ImgQrTool {
 
     public static void main(String[] args) throws IOException {
         for (int i = 1; i <= 1; i++) {
-            com.hl.kit.util.qr.QrImage para = new QrImage.Builder()
+            QrImage para = new QrImage.Builder()
                     .setFileOutputPath("D:\\二维码\\test\\" + i + ".jpg")
                     .setQrContent("http://www.baidu.com?a=" + "123")
                     .setQrHeight(300)

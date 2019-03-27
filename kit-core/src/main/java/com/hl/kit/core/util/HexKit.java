@@ -1,6 +1,5 @@
 package com.hl.kit.core.util;
 
-import com.hl.kit.util.StrKit;
 
 import java.nio.charset.Charset;
 

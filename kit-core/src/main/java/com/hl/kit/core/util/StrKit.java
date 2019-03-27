@@ -1,7 +1,5 @@
 package com.hl.kit.core.util;
 
-import com.hl.kit.util.CollectionKit;
-
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;

@@ -16,7 +16,6 @@
 package com.hl.kit.core.util.qr;
 
 import com.google.zxing.common.BitMatrix;
-import com.hl.kit.util.qr.MatrixToImageConfig;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -34,7 +33,7 @@ import java.nio.file.Path;
  */
 public final class MatrixToImageWriter {
 
-  private static final com.hl.kit.util.qr.MatrixToImageConfig DEFAULT_CONFIG = new com.hl.kit.util.qr.MatrixToImageConfig();
+  private static final MatrixToImageConfig DEFAULT_CONFIG = new MatrixToImageConfig();
 
   private MatrixToImageWriter() {}
 
@@ -49,7 +48,7 @@ public final class MatrixToImageWriter {
   /**
    * As {@link #toBufferedImage(BitMatrix)}, but allows customization of the output.
    */
-  public static BufferedImage toBufferedImage(BitMatrix matrix, com.hl.kit.util.qr.MatrixToImageConfig config) {
+  public static BufferedImage toBufferedImage(BitMatrix matrix, MatrixToImageConfig config) {
     int width = matrix.getWidth();
     int height = matrix.getHeight();
     BufferedImage image = new BufferedImage(width, height, config.getBufferedImageColorModel());
@@ -81,10 +80,10 @@ public final class MatrixToImageWriter {
   }
 
   /**
-   * @deprecated use {@link #writeToPath(BitMatrix, String, Path, com.hl.kit.util.qr.MatrixToImageConfig)}
+   * @deprecated use {@link #writeToPath(BitMatrix, String, Path, MatrixToImageConfig)}
    */
   @Deprecated
-  public static void writeToFile(BitMatrix matrix, String format, File file, com.hl.kit.util.qr.MatrixToImageConfig config)
+  public static void writeToFile(BitMatrix matrix, String format, File file, MatrixToImageConfig config)
       throws IOException {
     writeToPath(matrix, format, file.toPath(), config);
   }
@@ -92,7 +91,7 @@ public final class MatrixToImageWriter {
   /**
    * As {@link #writeToFile(BitMatrix, String, File)}, but allows customization of the output.
    */
-  public static void writeToPath(BitMatrix matrix, String format, Path file, com.hl.kit.util.qr.MatrixToImageConfig config)
+  public static void writeToPath(BitMatrix matrix, String format, Path file, MatrixToImageConfig config)
       throws IOException {
     BufferedImage image = toBufferedImage(matrix, config);
     if (!ImageIO.write(image, format, file.toFile())) {

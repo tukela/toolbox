@@ -1,7 +1,8 @@
 package com.hl.kit.core.util.file;
 
-import com.hl.kit.exception.GlobalException;
-import com.hl.kit.exception.GlobalExceptionEnum;
+
+import com.hl.kit.core.exception.GlobalException;
+import com.hl.kit.core.exception.GlobalExceptionEnum;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;

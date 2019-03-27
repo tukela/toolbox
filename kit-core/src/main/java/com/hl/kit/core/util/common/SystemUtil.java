@@ -1,6 +1,6 @@
 package com.hl.kit.core.util.common;
 
-import com.hl.kit.util.common.ExecuteUtil;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 

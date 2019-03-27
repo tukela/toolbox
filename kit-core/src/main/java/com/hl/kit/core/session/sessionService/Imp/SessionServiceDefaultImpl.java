@@ -1,6 +1,5 @@
 package com.hl.kit.core.session.sessionService.Imp;
-
-import com.hl.kit.session.sessionService.SessionService;
+import com.hl.kit.core.session.sessionService.SessionService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 

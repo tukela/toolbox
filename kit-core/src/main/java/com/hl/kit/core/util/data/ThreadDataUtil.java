@@ -1,6 +1,5 @@
 package com.hl.kit.core.util.data;
 
-import com.hl.kit.util.data.ThreadData;
 
 import java.util.Map;
 

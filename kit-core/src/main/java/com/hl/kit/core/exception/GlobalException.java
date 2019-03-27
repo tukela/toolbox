@@ -1,6 +1,5 @@
 package com.hl.kit.core.exception;
 
-import com.hl.kit.exception.ServiceExceptionEnum;
 
 /**
  * 封装全局的异常

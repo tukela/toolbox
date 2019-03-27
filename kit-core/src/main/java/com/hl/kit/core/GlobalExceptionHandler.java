@@ -1,7 +1,5 @@
 package com.hl.kit.core;
 
-import com.hl.kit.exception.GlobalException;
-import org.apache.logging.log4j.LogManager;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.CredentialsException;
 import org.apache.shiro.authc.DisabledAccountException;

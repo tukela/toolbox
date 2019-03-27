@@ -1,6 +1,5 @@
 package com.hl.kit.core.exception;
 
-import com.hl.kit.exception.ServiceExceptionEnum;
 
 /**
  * Global异常枚举

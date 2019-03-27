@@ -16,7 +16,6 @@
 
 package com.hl.kit.core.util.qr;
 
-import com.hl.kit.util.qr.MatrixToImageWriter;
 
 import java.awt.image.BufferedImage;
 

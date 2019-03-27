@@ -1,8 +1,9 @@
 package com.hl.kit.core;
 
 
-import com.hl.kit.webUtils.HttpKit;
-import com.hl.kit.util.file.FileUtils;
+
+import com.hl.kit.core.util.file.FileUtils;
+import com.hl.kit.core.webUtils.HttpKit;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

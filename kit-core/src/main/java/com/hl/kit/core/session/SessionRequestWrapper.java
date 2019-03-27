@@ -1,5 +1,4 @@
 package com.hl.kit.core.session;
-import com.hl.kit.session.DisSessionRequestWrapper;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;

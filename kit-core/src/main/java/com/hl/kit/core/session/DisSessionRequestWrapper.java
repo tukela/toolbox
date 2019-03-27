@@ -1,8 +1,8 @@
 package com.hl.kit.core.session;
 
 
-import com.hl.kit.session.HttpSessionWrapper;
-import com.hl.kit.webUtils.CookieUtil;
+
+import com.hl.kit.core.webUtils.CookieUtil;
 import org.apache.commons.lang.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;

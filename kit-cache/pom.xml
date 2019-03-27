@@ -35,6 +35,11 @@
             <artifactId>jedis</artifactId>
             <version>2.9.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.hl.kit</groupId>
+            <artifactId>kit-core</artifactId>
+            <version>0.0.1</version>
+        </dependency>
     </dependencies>
 
 </project>

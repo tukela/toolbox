@@ -2,8 +2,7 @@ package com.hl.kit.core.util;
 
 
 
-import com.hl.kit.util.PageKit;
-import com.hl.kit.util.StrKit;
+
 
 import java.lang.reflect.Array;
 import java.util.*;
@@ -547,7 +546,7 @@ public class CollectionKit {
 	 * @return Map
 	 */
 	public static Map<String, String> zip(String keys, String values, String delimiter) {
-		return zip(com.hl.kit.util.StrKit.split(keys, delimiter), StrKit.split(values, delimiter));
+		return zip(StrKit.split(keys, delimiter), StrKit.split(values, delimiter));
 	}
 	
 	/**
