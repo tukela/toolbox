@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/kit-cache/kit-cache.iml" filepath="$PROJECT_DIR$/kit-cache/kit-cache.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kit-config/kit-config.iml" filepath="$PROJECT_DIR$/kit-config/kit-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/kit-core/kit-core.iml" filepath="$PROJECT_DIR$/kit-core/kit-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/kit-data/kit-data.iml" filepath="$PROJECT_DIR$/kit-data/kit-data.iml" />
       <module fileurl="file://$PROJECT_DIR$/kit-parent.iml" filepath="$PROJECT_DIR$/kit-parent.iml" />

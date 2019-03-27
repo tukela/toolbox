@@ -10,7 +10,6 @@
     <modules>
         <module>kit-core</module>
         <module>kit-cache</module>
-        <module>kit-config</module>
         <module>kit-data</module>
         <module>kit-web</module>
     </modules>

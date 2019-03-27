@@ -1,5 +1,8 @@
 package com.hl.kit.data.repository;
 
+import com.hl.kit.data.common.mybaties.repository.UserMapper;
+import org.apache.ibatis.annotations.Mapper;
+
 /**
  * @author: honglei
  * @Date: 2018/10/8 16:26
@@ -7,6 +10,7 @@ package com.hl.kit.data.repository;
  * @See:
  * @Description:
  */
-public interface MyRepository  {
-    Object findByRealname(String name);
+
+public interface MyRepository extends UserMapper {
+
 }
