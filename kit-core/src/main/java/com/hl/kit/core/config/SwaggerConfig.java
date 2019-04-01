@@ -19,7 +19,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @date 2017年6月1日19:42:59
  */
 @Configuration
-@EnableSwagger2
 @ConditionalOnProperty(prefix = "guns", name = "swagger-open", havingValue = "true")
 public class SwaggerConfig {
 

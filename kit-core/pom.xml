@@ -262,6 +262,11 @@
             <artifactId>xstream</artifactId>
             <version>${xstream.version}</version>
         </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty</artifactId>
+            <version>3.7.0.Final</version>
+        </dependency>
 
     </dependencies>
 </project>

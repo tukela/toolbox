@@ -1,5 +1,6 @@
 package com.hl.kit.data;
 
+import com.hl.kit.core.util.common.SerializeUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Value;

@@ -21,7 +21,11 @@
             <artifactId>kit-data</artifactId>
             <version>0.0.1</version>
         </dependency>
-
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>${dom4j.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity</artifactId>

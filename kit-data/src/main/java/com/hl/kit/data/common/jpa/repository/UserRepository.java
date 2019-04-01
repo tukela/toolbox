@@ -1,8 +1,6 @@
 package com.hl.kit.data.common.jpa.repository;
 
-
-import com.hl.kit.data.repository.MyRepository;
-import com.hl.kit.data.entity.T_user;
+import com.hl.kit.data.common.jpa.model.T_user;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
